@@ -1,0 +1,1 @@
+Module 1 - solution - Single Page Web application with Angular JS course
