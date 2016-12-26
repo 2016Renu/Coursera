@@ -13,7 +13,6 @@
 
     $scope.getMessage = function(){
       var length = $scope.lunchItems.split(',').length;
-      console.log(length);
       if(length == 1)
       {
         InvalidData();
