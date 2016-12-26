@@ -1,0 +1,20 @@
+.message {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.errorbordercolor{
+  border-color: red;
+}
+
+.errortextcolor{
+  color:red;
+}
+
+.noerrorbordercolor{
+  border-color: green;
+}
+
+.noerrortextcolor{
+  color:green;
+}
