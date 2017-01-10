@@ -1,0 +1,12 @@
+<table ng-show="narrowedListCtrl.narrowedMenu.length !== 0">
+    <tbody>
+        <tr ng-repeat="item in narrowedListCtrl.narrowedMenu">
+            <td>{{item.name}}</td>
+            <td>{{item.short_name}}</td>
+            <td class="description">{{item.description}}</td>
+            <td><button class="removeButton"
+              ng-click="narrowedListCtrl.onRemove({index: $index});">
+              Don't want this one!</button></td>
+        </tr>
+    </tbody>
+  </table>
