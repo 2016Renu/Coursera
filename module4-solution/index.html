@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Master Detail view pair</title>
+</head>
+
+<body>
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="Lib/angular.min.js"></script>
+    <script src="Lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/Data.module.js"></script>
+    <script src="src/Menuapp.module.js"></script>
+
+    <!--Routes-->
+    <script src="src/route.js"></script>
+
+    <!--module artifacts-->
+    <script src="src/categories.component.js"></script>
+    <script src="src/maincategories.controller.js"></script>
+    <script src="src/items.controller.js"></script>
+    <script src="src/menudata.service.js"></script>
+</body>
+
+</html>
