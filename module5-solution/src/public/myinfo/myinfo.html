@@ -1,0 +1,54 @@
+<div class="container">
+  <h2>Newsletter registration info:</h2>
+  <div class="row" ng-show="myinfoCtrl.show">
+    <span>Not Signed Up Yet.
+        <a ui-sref="public.signup">Sign up Now!</a></span>
+  </div>
+  <div class="myinfo" ng-show="!myinfoCtrl.show">
+    <div class="row">
+      <div class="col-md-3">
+        <span>First name : </span>
+      </div>
+      <div class="col-md-3">{{ myinfoCtrl.info.firstname }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <span>Last name : </span>
+      </div>
+      <div class="col-md-3">{{ myinfoCtrl.info.lastname }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <span>Email Address : </span>
+      </div>
+      <div class="col-md-3">{{ myinfoCtrl.info.email }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <span>Phone# : </span>
+      </div>
+      <div class="col-md-3">{{ myinfoCtrl.info.phone }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <span>Favorite Dish (menu#) : </span>
+      </div>
+      <div class="col-md-3">{{ myinfoCtrl.info.favDish }}</div>
+    </div>
+    <div class="menu-item-tile col-md-12">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="menu-item-photo">
+            <img class="img-responsive" width="250" height="150"
+              ng-src="{{myinfoCtrl.basePath}}/images/{{myinfoCtrl.info.shortName}}.jpg" alt="{{myinfoCtrl.info.dishName}}">
+          </div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">{{myinfoCtrl.info.dishName}}</h3>
+          <p class="menu-item-details">{{myinfoCtrl.info.dishDesc}}</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+  </div>
+</div>
