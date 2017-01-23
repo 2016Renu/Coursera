@@ -22,18 +22,15 @@
     signupCtrl.errorMessage = '';
     signupCtrl.successMesssage = '';
 
-  //  signupCtrl.promise= '';
     var promise = '';
 signupCtrl.getMenuDetails = function(){
+
+    signupCtrl.errorMessage = '';
     promise = MenuService.getMenuDetails(signupCtrl.user.favDish);
 
-  signupCtrl.errorMessage = '';
   promise
-  .then(function(response){
-
-  })
   .catch(function(error){
-    console.log("Controller Error", error);
+    // console.log("Controller Error", error);
     signupCtrl.errorMessage = 'No such menu number exists.';
     signupCtrl.successMesssage = '';
   });
@@ -48,9 +45,9 @@ signupCtrl.getMenuDetails = function(){
 
           MenuService.user = signupCtrl.user;
           signupCtrl.successMesssage = "Your information has been saved."
-          console.log("service user", MenuService.user);
+          // console.log("service user", MenuService.user);
       }).catch(function(error){
-        console.log("Controller Error", error);
+        // console.log("Controller Error", error);
         signupCtrl.successMesssage = '';
       });
     };
